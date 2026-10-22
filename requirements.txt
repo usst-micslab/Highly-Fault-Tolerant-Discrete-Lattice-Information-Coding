@@ -1,0 +1,8 @@
+# Main codec path. Install matching torch/torchvision separately; see README.
+numpy==1.24.3
+Pillow==10.2.0
+opencv-python==4.9.0.80
+matplotlib==3.7.5
+tensorboardX==2.6
+protobuf==3.20.3
+bchlib==2.1.3

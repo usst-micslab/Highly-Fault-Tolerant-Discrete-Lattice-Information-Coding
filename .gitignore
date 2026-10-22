@@ -1,0 +1,60 @@
+# Private machine notes, runtime overlay, test outputs and caches
+/.local/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Installed frontend dependencies and builds
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# External data, inherited experiment outputs and logs
+/dataset/
+/datasets/
+/output/
+/outputs/
+/results/
+/checkpoints/
+/logs/
+/train code/black_white/images/
+/train code/black_white/runs/
+/train code/noise/*.png
+/train code/noise/*.jpg
+*.log
+events.out.tfevents.*
+
+# Model weights and experimental arrays, wherever placed
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.pb
+*.h5
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.*
+*.mp4
+*.avi
+.DS_Store
+._*
