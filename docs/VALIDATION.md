@@ -66,3 +66,18 @@ Generated images, reports, the private virtual environment, and installation whe
 - Ten dummy private/runtime paths were tested against the ignore rules, including checkpoints, datasets, environment files, node_modules, and experiment images. None entered the staged file list.
 - The skill's file/index audit returned exit code 0 and no review candidates. The real D-drive release was not initialized, committed, or pushed.
 - The public file set is approximately 0.6 MB; private `.local/` assets are not part of that figure.
+
+## Recheck on 2026-10-26
+
+The existing release and E-drive original were checked again without modifying the inherited code or installing packages into any existing environment:
+
+- All 34 inherited source/config/UI files matched the original preservation checksums; both supplied weight checksums also matched.
+- All 17 release Python files passed syntax compilation without execution of legacy training or GUI entry points.
+- Four protocol unit tests passed again.
+- Four actual `codec.py roundtrip` CLI calls recovered `cv`, `ab`, `hi`, and `A`, respectively, after saving and reopening their 400 × 400 grayscale PNGs. Raw bit errors were 1, 0, 1, and 0; BCH correction restored each message exactly.
+- A separate `codec.py decode` CLI call recovered `cv` from the generated PNG.
+- All checks used CPU inference and the existing task-specific interpreter. No GPU experiment, long training, frontend build, or server was started.
+
+Private recheck reports and images remain under ignored `.local/recheck_20261026/`. The previous optimizer diagnostic was not repeated; its original scope and all training/physical-capture limitations above still apply.
+
+Before this update, the local and remote `main` branches both pointed to `084122bc4c88b79dcc2ea9c8bb1dbb37bf2f3d11`. The upload guide now describes updating that existing repository rather than creating it again.

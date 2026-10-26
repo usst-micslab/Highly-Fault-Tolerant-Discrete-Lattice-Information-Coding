@@ -10,6 +10,8 @@ This repository is a laboratory-maintained release of inherited code associated 
 
 **Inference was checked with the supplied local encoder/decoder weights.** Four short messages were generated, saved to PNG, reloaded, and recovered with BCH correction. These were small, unmodified digital-image checks—not a screen-camera robustness benchmark.
 
+Rechecked on **2026-10-26**: all four message round trips, a separate decode command, and four protocol unit tests passed again. The inherited source files and external weights remained unchanged.
+
 All 15 inherited Python files are preserved byte-for-byte. A new [codec.py](codec.py) provides a portable CPU/BCH-2.x inference interface without modifying the network or the original scripts. See [validation and limitations](docs/VALIDATION.md). Model weights, datasets, `node_modules`, environments, logs, and experimental image collections are excluded from this release.
 
 ## Scope
@@ -150,4 +152,4 @@ Publication fields were checked against the supplied PDF and DOI registration re
 
 No project-wide LICENSE was supplied; this preparation does not assign a new license or claim official-code status. Confirm laboratory authorization before public distribution. Existing source attributions are retained; see [THIRD_PARTY.md](docs/THIRD_PARTY.md).
 
-For Windows CMD upload steps, use [GITHUB_UPLOAD_GUIDE_zh.md](GITHUB_UPLOAD_GUIDE_zh.md). Preparation did not create a remote repository, commit, or push.
+The laboratory repository is [usst-micslab/Highly-Fault-Tolerant-Discrete-Lattice-Information-Coding](https://github.com/usst-micslab/Highly-Fault-Tolerant-Discrete-Lattice-Information-Coding). For Windows CMD steps to update this existing repository, use [GITHUB_UPLOAD_GUIDE_zh.md](GITHUB_UPLOAD_GUIDE_zh.md). Do not reinitialize it or replace its history just to upload an update.
